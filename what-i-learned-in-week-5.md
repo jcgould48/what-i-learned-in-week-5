@@ -44,3 +44,12 @@ Application programming interface (API) - Code that is designed to be used by co
 There are all sorts of APIs on the internet that take in information (day of week) and output information in response (weather forecast for that day)
 
 Our project 'Domb and Domber' were essentially basic APIs.
+
+With the Domination project we further explored the different way functions can be used to change the Dom.  An important lesson from this is the different structures and resulting effects these functions have on the DOM.
+
+* **Side Effect Query Functions**-
+        These functions won't `return` anything, just make changes to the current DOM. They also won't take in any complex objects, just strings! Remember that variables with strings in them can be used _exactly the same_ as the strings themselves.
+* **Side Effect Node Element Functions**-
+        These functions will take in an HTML Element, complete with all the sub-variables and and sub-sub-variables that come with it. They then manipulate that element according to the specifications below. 
+* **Pure Functions Returning Node Elements**-
+        These functions will all take in parameters and use them to make and return node elements. They don't do _anything_ to the DOM. So to test them, we have to use other functions.
